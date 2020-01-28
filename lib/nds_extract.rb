@@ -87,7 +87,7 @@ def movies_with_directors_set(source)
   dir_movies = [] #direcotrs will contain movies
   index = 0
   while index < source.length do
-    dir_hash = source[i]
+    dir_hash = source[index]
     name = dir_hash[:name]
     movies = dir_hash[:movies]
     dir_movies[index] = movies_with_director_key(name, movies)
