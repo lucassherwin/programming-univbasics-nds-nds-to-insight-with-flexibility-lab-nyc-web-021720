@@ -92,6 +92,7 @@ def movies_with_directors_set(source)
     dir_movies = movies_with_director_key(name, movies)
     index += 1
   end
+  dir_movies
 end
 
 # ----------------    End of Your Code Region --------------------
