@@ -88,8 +88,10 @@ def movies_with_directors_set(source)
   index = 0
   while index < source.length do
     dir_hash = source[index]
-    name = dir_hash[:name]
-    movies = dir_hash[:movies]
+    #name = dir_hash[:name]
+    #movies = dir_hash[:movies]
+    name = source[index][:name]
+    movies = source[index][:movies]
     dir_movies[index] = movies_with_director_key(name, movies)
     index += 1
   end
