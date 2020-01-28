@@ -87,7 +87,8 @@ def movies_with_directors_set(source)
   dir_movies = [] #direcotrs will contain movies
   index = 0
   while index < source.length do
-    name = source[index][:name]
+    dir_hash = source[i]
+    name = source[index]
     movies = source[index][:movies]
     dir_movies = movies_with_director_key(name, movies)
     index += 1
@@ -104,3 +105,4 @@ def studios_totals(nds)
   movies_with_director_names = flatten_a_o_a(a_o_a_movies_with_director_names)
   return gross_per_studio(movies_with_director_names)
 end
+  
