@@ -90,7 +90,7 @@ def movies_with_directors_set(source)
     dir_hash = source[i]
     name = dir_hash[:name]
     movies = dir_hash[:movies]
-    dir_movies = movies_with_director_key(name, movies)
+    dir_movies[index] = movies_with_director_key(name, movies)
     index += 1
   end
   dir_movies
